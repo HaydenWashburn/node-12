@@ -50,7 +50,8 @@ margin:auto;
 
 /* Box 2 in Square 2 */
 #absolute-box-2 {
-  padding-left:110%;
-  
+  position:relative;
+top:0;
+right:-300;
   /* TODO: Set the position so it is outside of the upper-right corner of Square 2 */
 }
