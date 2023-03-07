@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+main{
+  padding:0;
+  display:flex; 
+justify-content: center;
+flex-wrap: wrap; } 
+
 body {
   font-family: Arial;
   margin: 0;
@@ -17,7 +23,7 @@ header {
 .card {
   border-style: solid;
   border-width: 1px;
-  padding: 10px;
+  padding:10px;
   float: left;
   width: 25%;
 }
@@ -35,5 +41,24 @@ header {
 }
 
 /* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
+@media screen and (max-width: 992px) {
+
+  .card{
+    width:50%;
+  }
+  header{
+    background-color: orange;
+  }
+  }
+
+
 
 /* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px){
+  .card{
+    width:100%;
+  }
+  header{
+    background-color: gray;
+  }
+}
