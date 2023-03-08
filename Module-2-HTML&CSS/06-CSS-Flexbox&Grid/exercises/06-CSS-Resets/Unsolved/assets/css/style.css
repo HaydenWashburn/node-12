@@ -65,8 +65,8 @@ aside {
   width: 25%;
 }
 
-aside h2 {
-  font-size: 150%;
+aside{
+  font-size:150%
 }
 
 input, button {
