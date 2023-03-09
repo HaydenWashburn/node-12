@@ -20,6 +20,10 @@ header {
   color: #fff;
 }
 
+main{
+  display: flex;
+}
+
 .card {
   border-style: solid;
   border-width: 1px;
@@ -42,6 +46,13 @@ header {
 
 /* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
 @media screen and (max-width: 992px) {
+  main{
+    flex-direction: column;
+  }
+  .card{
+    align-items: flex-end;
+  }
+}@media screen and (max-width: 992px) {
 
   .card{
     width:50%;
