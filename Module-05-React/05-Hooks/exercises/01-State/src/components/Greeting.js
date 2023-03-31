@@ -6,7 +6,7 @@ function Greeting() {
   const [greeting, setGreeting] = useState ('Welcome the following students to class!');
 
   // TODO: Convert `group` to a state variable using the useState hook. Set to an initial value to an array including three students in your class. (ex. ["John", "Grace", "Jared"])
-  const [group, setgroup] = useState['Hayden', 'Matt J', 'Leland'];
+  const [group, setGroup] = useState(['Hayden', 'Matt J', 'Leland']);
 
   return (
     <div className="card text-center">
@@ -18,7 +18,7 @@ function Greeting() {
           {/* TODO: Fix the list below so that each member of your group is accessed from the `group` array */}
           <li>{group[0]}</li>
           <li>{group[1]}</li>
-          <li>{group[3]}</li>
+          <li>{group[2]}</li>
         </ul>
       </div>
     </div>
